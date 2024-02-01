@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Workbench&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cauculadora de IMC</title>
+</head>
+<body>
+       <div class="fundo">
+        <main>
+            <img id="peso-academia" src="image/peso.png" alt="peso de academia">
+            <img id="maca" src="image/maca.png" alt="maça">
+                <div id="interface">
+
+                    <h1>Calculadora de IMC</h1>
+
+                    <div class="label">
+                        <label>Nome:</label>
+                        <input type="text" id="nome">
+                    </div>
+
+                    
+                    <div class="label">
+                        <label>Idade:</label>
+                        <input type="number" id="idade">
+                    </div>
+
+                    
+                    <div class="label">
+                        <label>Altura:</label>
+                        <input type="number" id="altura">
+                    </div>
+
+                    
+                    <div class="label">
+                        <label>Peso:</label>
+                        <input type="number" id="peso">
+                    </div>
+
+                    <button id="calculo" onclick="calcular()">Calcular IMC</button>
+
+                    <div id="resultado">
+
+
+                    </div>
+
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

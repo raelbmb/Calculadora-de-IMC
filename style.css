@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(image/fundo.png);
+    background-size: cover;
+    background-position:center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+div.fundo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    
+}
+/*imagens*/
+
+#peso-academia{
+    position: absolute;
+    width: 150px;
+    top: -50px;
+    left: 320px;
+    transform: rotate(5deg);
+}
+
+#maca{
+    position: absolute;
+    top: 620px;
+    
+    width: 100px;
+}
+
+/*interface*/
+
+main{
+    width: 430px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    
+
+}
+
+h1{
+    font-family: 'Workbench', sans-serif;
+    color: rgb(63, 63, 63);
+    text-shadow: 2px 2px 30px black;
+    font-size: 32px;
+    margin: 5px;
+}
+
+div#interface{
+    background: linear-gradient(to bottom, #fff567, rgb(255, 182, 25));
+    border: double 14px black;
+    border-radius: 20px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.label{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+}
+
+input{
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    outline: 0;
+    text-align: center;
+    caret-color: rgb(253, 121, 5);
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+button{
+    color: #fff237;
+    background-color: black;
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+    border: solid #ea860b 4px; 
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+button:hover{
+    
+    color: white;
+    text-shadow: 0px 0px 15px white;
+    border: solid #ea210b 5px;
+}
+
+div#resultado{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: #bebebe;
+    width: 305px;
+    height: 300px;
+    border: #fff237 solid 4px;
+    border-radius: 10px;
+    background-color: black;
+    padding: 15px;
+    text-indent: 10px;
+  
+}
+
+/*cores de classificações*/
+
+.cor1{
+    color: yellow;
+}
+
+.cor2{
+    color: rgb(27, 210, 103);
+}
+
+.cor3{
+    color: rgb(226, 29, 29);
+}
