@@ -19,7 +19,7 @@
 
 ## 💻 Projeto
 
-Este é um projeto de Cauculadora de IMC, como se fosse um aplicativo de saúde ou de academia, tentando causar o máximo de interatividade com o cliente, guardando seu nome, idade e cauculando o IMC através das informações de peso e altura. Com base nas informações o aplicativo irá mostrar se a pessoa está:
+Este é um projeto de Calculadora de IMC, como se fosse um aplicativo de saúde ou de academia, tentando causar o máximo de interatividade com o cliente, guardando seu nome, idade e calculando o IMC através das informações de peso e altura. Com base nas informações o aplicativo irá mostrar se a pessoa está:
 
 - Muito abaixo do Peso
 - Abaixo do Peso
