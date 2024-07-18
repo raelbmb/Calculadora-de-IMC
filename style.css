@@ -1,21 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(image/fundo.png);
     background-size: cover;
-    background-position:center; 
+    background-position: center; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
-    
-
 }
 
-div.fundo{
+div.fundo {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,38 +21,37 @@ div.fundo{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 999;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*imagens*/
 
-#peso-academia{
+/* Imagens */
+#peso-academia {
     position: absolute;
-    width: 150px;
-    top: -50px;
-    left: 320px;
+    width: 15%;
+    top: 0%; 
+    left: 80%; 
     transform: rotate(5deg);
+    z-index: 1000; /* Garante que a imagem fique acima de outros elementos */
 }
 
-#maca{
+#maca {
     position: absolute;
-    top: 620px;
-    
-    width: 100px;
+    top: 75%; 
+    left: 10%; 
+    width: 10%;
+    z-index: 1000; 
 }
 
-/*interface*/
-
-main{
-    width: 430px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 150px;
-    
-
+/* Interface */
+main {
+    width: 90%;
+    max-width: 430px;
+    margin: 0 auto;
 }
 
-h1{
+h1 {
     font-family: 'Workbench', sans-serif;
     color: rgb(63, 63, 63);
     text-shadow: 2px 2px 30px black;
@@ -62,27 +59,27 @@ h1{
     margin: 5px;
 }
 
-div#interface{
+div#interface {
     background: linear-gradient(to bottom, #fff567, rgb(255, 182, 25));
     border: double 14px black;
     border-radius: 20px;
-    align-self: center;
-    align-content: center;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 80vh;
 }
 
-.label{
+.label {
     display: flex;
-    width: 300px;
-    height: 50px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     font-size: 21px;
+    margin-bottom: 10px;
 }
 
-input{
-    width: 210px;
+input {
+    width: 60%;
     height: 40px;
     border-radius: 5px;
     outline: 0;
@@ -93,7 +90,7 @@ input{
     color: white;
 }
 
-button{
+button {
     color: #fff237;
     background-color: black;
     font-size: 18px;
@@ -104,37 +101,48 @@ button{
     transition: 0.8s;
 }
 
-button:hover{
-    
+button:hover {
     color: white;
     text-shadow: 0px 0px 15px white;
     border: solid #ea210b 5px;
 }
 
-div#resultado{
+div#resultado {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     color: #bebebe;
-    width: 305px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     border: #fff237 solid 4px;
     border-radius: 10px;
     background-color: black;
     padding: 15px;
     text-indent: 10px;
-  
+    margin: 10px auto;
 }
 
-/*cores de classificações*/
-
-.cor1{
+/* Cores de classificações */
+.cor1 {
     color: yellow;
 }
 
-.cor2{
+.cor2 {
     color: rgb(27, 210, 103);
 }
 
-.cor3{
+.cor3 {
     color: rgb(226, 29, 29);
+}
+
+@media screen and (max-width: 1000px){
+    #maca{
+        width: 20%;
+        left: 0%;
+        top: 89%;
+    }
+
+    #peso-academia{
+        width: 25%;
+        top: 5%; 
+    }
 }
